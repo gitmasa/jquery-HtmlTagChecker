@@ -45,7 +45,7 @@ font : color, size<br/>
 a : href, target<br/>
 td : rowspan, colspan<br/>
 
-＜アトリビュートの内容チェック＞
+＜アトリビュートの内容チェック＞<br/>
 style : 中に、expression文字列が無いかどうかの確認。<br/>
 img[src] : http(s)://から開始しているかどうか、最後が.(gif|jpg|png|GIF|JPG|PNG)のいずれかであるかどうか。<br/>
 a[href] : http(s)://から開始しているかどうか<br/>
