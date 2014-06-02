@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noarchive">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="format-detection" content="telephone=no" />
+
+<!--scrpit road-->
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<!--scrpit end-->
+
+<title>Sample HTML</title>
+
+</head>
+
+<body id="mypage_login" >
+
+<!-- See below -->
+<script type="text/javascript" src="HtmlTagChecker.js"></script>
+<script type="text/javascript">
+function validate_form1() {
+	var _me = $('#form1');
+	var _target = _me.find('textarea[name="demo"]');
+	var _str = _target.val();
+	var check = $.html_tag_checker.check(_str);
+	if (!check['status']) {
+		alert(check['err_str']);
+		return false;
+	}
+	alert('All Tag Complete!');
+	return true;
+}
+</script>
+<!-- end -->
+
+<hr>
+
+<form action="#" id="form1" method="post" autocomplete="off">
+<textarea name="demo" style="width:700px;height:400px;">
+</textarea>
+<br/>
+<input type="button" name="button" value="Dummy Post" onClick="validate_form1();"/>
+<hr>
+
+</body>
+
+</html>
