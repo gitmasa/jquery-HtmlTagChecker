@@ -30,25 +30,25 @@
 ４．第二引数にhashを渡すことで、エラーメッセージの内容や挙動を変えたり、許可タグを追加・削除したりすることができます。
 ５．そのままで動作する場合、以下のタグ要件を検証します。
 
-＜許可しないタグ＞
+＜許可しないタグ＞<br/>
 script, object, iframe, frame, frameset, meta, style, body, input, form, textarea, applet, bgsound, base, embed, head, html, ilayer, layer, link, name, xml, title, basefont, id, area, col, isindex, param, !doctype, marquee
 
-＜単体で閉じる必要性が無いと判断するタグ(これ以外で閉じタグが無いような場合は、アラートします。)＞
-br, hr, img
+＜単体で閉じる必要性が無いと判断するタグ(これ以外で閉じタグが無いような場合は、アラートします。)＞<br/>
+br, hr, img<br/>
 
-＜どのようなタグでも許可するアトリビュート＞
-style, class, id
+＜どのようなタグでも許可するアトリビュート＞<br/>
+style, class, id<br/>
 
-＜特定のタグについて許可するアトリビュート＞
-img : alt, src
-font : color, size
-a : href, target
-td : rowspan, colspan
+＜特定のタグについて許可するアトリビュート＞<br/>
+img : alt, src<br/>
+font : color, size<br/>
+a : href, target<br/>
+td : rowspan, colspan<br/>
 
 ＜アトリビュートの内容チェック＞
-style : 中に、expression文字列が無いかどうかの確認。
-img[src] : http(s)://から開始しているかどうか、最後が.(gif|jpg|png|GIF|JPG|PNG)のいずれかであるかどうか。
-a[href] : http(s)://から開始しているかどうか
+style : 中に、expression文字列が無いかどうかの確認。<br/>
+img[src] : http(s)://から開始しているかどうか、最後が.(gif|jpg|png|GIF|JPG|PNG)のいずれかであるかどうか。<br/>
+a[href] : http(s)://から開始しているかどうか<br/>
 
 こんな感じです。
 
