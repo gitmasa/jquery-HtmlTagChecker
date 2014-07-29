@@ -166,7 +166,7 @@
 				in_attr = false;
 				in_attrname=true;
 				if (tmp_attrname) {
-					ret.push({'name':tmp_attrname, 'attr':tmp_attr}); 
+					ret.push({'name':tmp_attrname.toLowerCase(), 'attr':tmp_attr}); 
 				}
 				tmp_attr = tmp_attrname = start_str = '';
 				continue;
@@ -192,7 +192,7 @@
 			}
 		}
 		if (tmp_attrname) {
-			ret.push({'name':tmp_attrname, 'attr':tmp_attr}); 
+			ret.push({'name':tmp_attrname.toLowerCase(), 'attr':tmp_attr}); 
 		}
 		return ret;
 	}
